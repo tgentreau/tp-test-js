@@ -1,8 +1,9 @@
 import should from "should"
-import { getPrixTotalPanier } from "../app.js"
+import { getPrixTotalPanier, prixTVA } from "../app.js"
 describe("TEST prix total du panier", () => {
     it("générer un prix total", () => {
         debugger
         getPrixTotalPanier().should.be.a.Number()
+        prixTVA().should.be.a.Number()
     })
 })

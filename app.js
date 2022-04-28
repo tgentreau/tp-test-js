@@ -37,7 +37,7 @@ export const getPrixTotalPanier = () => {
 
 // console.log(getPrixTotalPanier());
 
-const prixTVA = (tva) => {
+export const prixTVA = (tva) => {
     const prix = getPrixTotalPanier()
     const prixTva = (prix * tva) / 100
     const prixFinal = prix + prixTva
