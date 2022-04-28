@@ -26,7 +26,7 @@ const createPanier = (produit) => {
 
 // console.log(createPanier([produit,produit2]))
 
-const getPrixTotalPanier = () => {
+export const getPrixTotalPanier = () => {
     const panier = createPanier([produit,produit2])
     let prix = 0
     for (let i = 0; i < panier.produits.length; i++) {
@@ -44,4 +44,4 @@ const prixTVA = (tva) => {
     return prixFinal
 }
 
-console.log(prixTVA(20));
+// console.log(prixTVA(20));

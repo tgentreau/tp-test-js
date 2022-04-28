@@ -1,0 +1,4 @@
+lanaguage: node_js
+node_js:
+  -"node"
+  -"16"
