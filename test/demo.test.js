@@ -1,14 +1,7 @@
-import should from "should"
 import { getPrixTotalPanier, prixTVA } from "../app.js"
-describe("TEST prix total du panier", () => {
-    it("générer un prix total", () => {
-        debugger
-        getPrixTotalPanier().should.be.a.Number()
-    })
+test("TEST prix total du panier", () => {
+    expect(getPrixTotalPanier()).toBe(50)
 })
-describe("TEST tva number", () => {
-    it("générer une tva", () => {
-        debugger
-        prixTVA().should.be.a.Number()
-    })
+test("TEST tva", () => {
+    expect(prixTVA(20)).toBe(60)
 })

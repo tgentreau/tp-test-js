@@ -43,5 +43,3 @@ export const prixTVA = (tva) => {
     const prixFinal = prix + prixTva
     return prixFinal
 }
-
-// console.log(prixTVA(20));
