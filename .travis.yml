@@ -1,6 +1,5 @@
 lanaguage: node_js
 node_js:
-  -"node"
   -"16"
 before_install: 
   - npm install -g mocha
