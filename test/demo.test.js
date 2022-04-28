@@ -1,4 +1,7 @@
-const app = require('../app.js')
+import { getPrixTotalPanier, prixTVA } from "../app.js"
 test("TEST prix total du panier", () => {
-    expect(app).toBe(50)
+    expect(getPrixTotalPanier()).toBe(50)
+})
+test("TEST tva", () => {
+    expect(prixTVA(20)).toBe(60)
 })
