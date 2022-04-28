@@ -3,7 +3,7 @@ import { getPrixTotalPanier, prixTVA } from "../app.js"
 describe("TEST prix total du panier", () => {
     it("générer un prix total", () => {
         debugger
-        getPrixTotalPanier().should.be.a.Number()
+        getPrixTotalPanier().should.be.a.String()
     })
 })
 describe("TEST tva number", () => {
